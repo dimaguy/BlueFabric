@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "bluefabric",
+  "version": "${version}",
+  "name": "BlueFabric",
+  "description": "BlueMap integration for Fabric's Vanilla World Border",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/bluefabric/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "me.dimaguy.bluefabric.Bluefabric"
+    ]
+  },
+  "mixins": [
+    "bluefabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
